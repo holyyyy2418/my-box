@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马克思主义原理探索</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 自定义CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-star me-2"></i>马克思主义原理
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#principles">基本原理</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history">历史发展</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#figures">代表人物</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quiz">知识测验</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- 英雄区域 -->
+<header id="home" class="hero-section" style="background-image: url('images/hero-background.jpg'); background-size: cover; background-position: center;">
+    <div class="hero-overlay"></div>
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center text-white">
+                <h1 class="display-3 fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">探索马克思主义原理</h1>
+                <p class="lead">理论与实践的统一，历史与现实的对话</p>
+                <a href="#principles" class="btn btn-primary btn-lg mt-3" id="exploreBtn">开始探索</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+document.getElementById('exploreBtn').addEventListener('click', function(e) {
+    e.preventDefault(); // 阻止默认锚点跳转行为
+    
+    // 平滑滚动一个视窗高度
+    window.scrollBy({
+        top: window.innerHeight, // 滚动一个屏幕高度
+        behavior: 'smooth'      // 平滑滚动效果
+    });
+});
+</script>
+
+    <!-- 基本原理部分 -->
+    <section id="principles" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">马克思主义基本原理</h2>
+                    <p class="section-subtitle">马克思主义是科学的世界观和方法论</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 principle-card">
+                        <div class="card-body text-center">
+                            <div class="principle-icon mb-3">
+                                <i class="fas fa-globe-europe fa-3x"></i>
+                            </div>
+                            <h3 class="card-title">辩证唯物主义</h3>
+                            <p class="card-text">世界是物质的，物质是运动的，运动是有规律的。对立统一规律是唯物辩证法的实质和核心。</p>
+                            <button class="btn btn-outline-primary mt-2 learn-more" data-bs-toggle="modal" data-bs-target="#dialecticalModal">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 principle-card">
+                        <div class="card-body text-center">
+                            <div class="principle-icon mb-3">
+                                <i class="fas fa-history fa-3x"></i>
+                            </div>
+                            <h3 class="card-title">历史唯物主义</h3>
+                            <p class="card-text">社会存在决定社会意识，生产力决定生产关系，经济基础决定上层建筑，人民群众是历史的创造者。</p>
+                            <button class="btn btn-outline-primary mt-2 learn-more" data-bs-toggle="modal" data-bs-target="#historicalModal">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 principle-card">
+                        <div class="card-body text-center">
+                            <div class="principle-icon mb-3">
+                                <i class="fas fa-industry fa-3x"></i>
+                            </div>
+                            <h3 class="card-title">政治经济学</h3>
+                            <p class="card-text">剩余价值理论揭示了资本主义剥削的本质，资本主义基本矛盾必然导致周期性经济危机。</p>
+                            <button class="btn btn-outline-primary mt-2 learn-more" data-bs-toggle="modal" data-bs-target="#economicsModal">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 历史发展时间线 -->
+    <section id="history" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">马克思主义历史发展</h2>
+                    <p class="section-subtitle">从理论创立到实践发展的伟大历程</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">1848年</div>
+                            <div class="timeline-content">
+                                <h3>《共产党宣言》发表</h3>
+                                <p>马克思和恩格斯为共产主义者同盟起草的纲领，标志着马克思主义的诞生。</p>
+                                <img src="images/communist-manifesto.jpg" alt="共产党宣言" class="img-fluid mt-2" style="width: 25%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1867年</div>
+                            <div class="timeline-content">
+                                <h3>《资本论》第一卷出版</h3>
+                                <p>马克思的政治经济学巨著，揭示了资本主义社会的经济运动规律。</p>
+                                <img src="images/capital-volume1.jpg" alt="资本论第一卷" class="img-fluid mt-2" style="width: 25%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1917年</div>
+                            <div class="timeline-content">
+                                <h3>十月革命胜利</h3>
+                                <p>列宁领导的布尔什维克党取得胜利，建立了世界上第一个社会主义国家。</p>
+                                <img src="images/october-revolution.jpg" alt="十月革命" class="img-fluid mt-2" style="width: 25%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">1949年</div>
+                            <div class="timeline-content">
+                                <h3>中华人民共和国成立</h3>
+                                <p>中国共产党领导的新民主主义革命取得胜利，开启了社会主义革命和建设的新纪元。</p>
+                                <img src="images/peoples-republic-of-china.jpg" alt="中华人民共和国成立" class="img-fluid mt-2" style="width: 25%; height: auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 代表人物 -->
+    <section id="figures" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">马克思主义代表人物</h2>
+                    <p class="section-subtitle">伟大思想家与实践者的光辉形象</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card figure-card">
+                        <img src="images/marx.jpg" class="card-img-top" alt="卡尔·马克思">
+                        <div class="card-body">
+                            <h3 class="card-title">卡尔·马克思</h3>
+                            <p class="card-text">马克思主义创始人，哲学家、经济学家、革命家，主要著作有《共产党宣言》《资本论》等。</p>
+                            <button class="btn btn-primary view-details" data-figure="marx">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card figure-card">
+                        <img src="images/engels.jpg" class="card-img-top" alt="弗里德里希·恩格斯">
+                        <div class="card-body">
+                            <h3 class="card-title">弗里德里希·恩格斯</h3>
+                            <p class="card-text">马克思主义创始人之一，马克思的亲密战友，著有《反杜林论》《家庭、私有制和国家的起源》等。</p>
+                            <button class="btn btn-primary view-details" data-figure="engels">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card figure-card">
+                        <img src="images/lenin.jpg" class="card-img-top" alt="列宁">
+                        <div class="card-body">
+                            <h3 class="card-title">列宁</h3>
+                            <p class="card-text">马克思主义的继承和发展者，列宁主义创始人，领导了十月革命，建立了苏维埃政权。</p>
+                            <button class="btn btn-primary view-details" data-figure="lenin">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 知识测验 -->
+    <section id="quiz" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">马克思主义知识测验</h2>
+                    <p class="section-subtitle">检验你对马克思主义原理的理解</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="quiz-container">
+                        <div id="quiz-progress" class="mb-3">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                            </div>
+                            <p class="text-end mt-1">问题 <span id="current-question">1</span>/<span id="total-questions">5</span></p>
+                        </div>
+                        <div id="quiz-question" class="mb-4">
+                            <h3 class="question-text">马克思主义哲学的直接理论来源是？</h3>
+                        </div>
+                        <div id="quiz-options" class="mb-4">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="quizOption" id="option1" value="A">
+                                <label class="form-check-label" for="option1">德国古典哲学</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="quizOption" id="option2" value="B">
+                                <label class="form-check-label" for="option2">英国古典政治经济学</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="quizOption" id="option3" value="C">
+                                <label class="form-check-label" for="option3">法国空想社会主义</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="quizOption" id="option4" value="D">
+                                <label class="form-check-label" for="option4">古希腊哲学</label>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button id="quiz-prev" class="btn btn-secondary" disabled>上一题</button>
+                            <button id="quiz-next" class="btn btn-primary">下一题</button>
+                            <button id="quiz-submit" class="btn btn-success d-none">提交答案</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>关于本项目</h5>
+                    <p>本网站是为马克思主义原理课程设计的交互式学习平台，旨在通过多媒体形式展示马克思主义的理论体系和历史发展。</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>快速链接</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">首页</a></li>
+                        <li><a href="#principles" class="text-white">基本原理</a></li>
+                        <li><a href="#history" class="text-white">历史发展</a></li>
+                        <li><a href="#figures" class="text-white">代表人物</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>联系信息</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> 18940840317@163.com</li>
+                        <li><i class="fas fa-phone me-2"></i> 18940840317 </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3 bg-light">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2023 马克思主义原理学习平台. 保留所有权利.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 模态框 -->
+    <!-- 辩证唯物主义模态框 -->
+    <div class="modal fade" id="dialecticalModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">辩证唯物主义</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>辩证唯物主义的基本原理</h4>
+                    <p>辩证唯物主义是马克思主义哲学的重要组成部分，主要包括以下基本原理：</p>
+                    <ul>
+                        <li><strong>世界的物质统一性原理</strong>：世界是物质的，意识是物质高度发展的产物</li>
+                        <li><strong>物质和意识的辩证关系原理</strong>：物质决定意识，意识对物质具有能动作用</li>
+                        <li><strong>对立统一规律</strong>：矛盾是事物发展的动力和源泉</li>
+                        <li><strong>质量互变规律</strong>：量变引起质变，质变又引起新的量变</li>
+                        <li><strong>否定之否定规律</strong>：事物发展是前进性和曲折性的统一</li>
+                    </ul>
+                    <h4>方法论意义</h4>
+                    <p>辩证唯物主义为我们提供了认识世界和改造世界的科学方法，要求我们坚持一切从实际出发，实事求是，用发展的眼光看问题，具体问题具体分析。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 历史唯物主义模态框 -->
+    <div class="modal fade" id="historicalModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">历史唯物主义</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>历史唯物主义的基本观点</h4>
+                    <p>历史唯物主义是马克思主义关于社会发展一般规律的科学，其主要观点包括：</p>
+                    <ul>
+                        <li><strong>社会存在决定社会意识</strong>：物质生活的生产方式制约着整个社会生活、政治生活和精神生活的过程</li>
+                        <li><strong>生产力决定生产关系</strong>：生产力是最活跃最革命的因素，是社会发展的最终决定力量</li>
+                        <li><strong>经济基础决定上层建筑</strong>：政治、法律、哲学、宗教等上层建筑建立在经济基础之上</li>
+                        <li><strong>社会基本矛盾运动</strong>：生产力和生产关系、经济基础和上层建筑的矛盾是社会发展的基本动力</li>
+                        <li><strong>人民群众是历史的创造者</strong>：人民群众是社会物质财富和精神财富的创造者，是社会变革的决定力量</li>
+                    </ul>
+                    <h4>社会形态更替规律</h4>
+                    <p>人类社会的发展是一个自然历史过程，经历了原始社会、奴隶社会、封建社会、资本主义社会，最终将走向共产主义社会。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 政治经济学模态框 -->
+    <div class="modal fade" id="economicsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">马克思主义政治经济学</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>劳动价值论</h4>
+                    <p>商品具有使用价值和价值二因素，价值是凝结在商品中的无差别的人类劳动，商品的价值量由社会必要劳动时间决定。</p>
+                    <h4>剩余价值理论</h4>
+                    <p>剩余价值是雇佣工人创造的被资本家无偿占有的超过劳动力价值的价值，它揭示了资本主义剥削的秘密。</p>
+
+                    <h4>资本主义基本矛盾</h4>
+                    <p>生产的社会化与生产资料资本主义私人占有之间的矛盾是资本主义的基本矛盾，这一矛盾表现为：</p>
+                    <ul>
+                        <li>个别企业生产的有组织性与整个社会生产的无政府状态之间的矛盾</li>
+                        <li>生产无限扩大的趋势与劳动人民有支付能力的需求相对缩小之间的矛盾</li>
+                    </ul>
+                    <h4>资本主义的历史地位</h4>
+                    <p>资本主义在历史上曾经起过非常革命的作用，但它最终将被更高级的社会形态——社会主义和共产主义所取代。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 人物详情模态框 -->
+    <div class="modal fade" id="figureModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="figureModalTitle">人物详情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="figureModalBody">
+                    <!-- 内容将通过JavaScript动态加载 -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 测验结果模态框 -->
+    <div class="modal fade" id="quizResultModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">测验结果</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h3 id="quiz-result-score" class="mb-3">你的得分: <span class="text-primary">0</span>/5</h3>
+                    <p id="quiz-result-message">测验结果说明</p>
+                    <div id="quiz-result-details" class="mt-3 text-start">
+                        <!-- 题目详情将通过JavaScript动态加载 -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS 和 Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 自定义JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
